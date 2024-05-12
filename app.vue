@@ -32,9 +32,8 @@ import Separator from './components/ui/separator/Separator.vue';
                         </div>
                     </CardTitle>
                     <CardDescription>
-                        <div class="flex h-5 flex-row space-x-2">
+                        <div class="flex justify-between flex-row space-x-2">
                             <p>Software Engineer</p>
-                            <Separator orientation="vertical" />
                             <p>July 2022 - Now</p>
                         </div>
                     </CardDescription>
@@ -62,9 +61,8 @@ import Separator from './components/ui/separator/Separator.vue';
                         </div>
                     </CardTitle>
                     <CardDescription>
-                        <div class="flex h-5 flex-row space-x-2">
+                        <div class="flex justify-between flex-row space-x-2">
                             <p>Part-Time Undergraduate</p>
-                            <Separator orientation="vertical" />
                             <p>March 2021 - March 2022</p>
                         </div>
                     </CardDescription>
