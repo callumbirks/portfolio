@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { icon } from '@fortawesome/fontawesome-svg-core';
 import { Card } from './components/ui/card';
 import CardContent from './components/ui/card/CardContent.vue';
 import CardDescription from './components/ui/card/CardDescription.vue';
