@@ -1,5 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  build: {
+    transpile: [
+      "@fortawesome/vue-fontawesome"
+    ]
+  },
   modules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode", "shadcn-nuxt"],
   tailwindcss: {
     cssPath: '~/src/global.css',
