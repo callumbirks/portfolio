@@ -15,8 +15,11 @@ COPY --from=install /temp/dev/node_modules node_modules
 COPY . .
 
 FROM base AS release
+RUN adduser bun bun
 COPY --from=install /temp/prod/node_modules node_modules
-COPY --from=prerelease . .
+COPY --chown=bun:bun --from=prerelease . .
+RUN mkdir /usr/src/app/.nuxt \
+    && chown -R bun:bun /usr/src/app/.nuxt
 
 USER bun
 EXPOSE 3000/tcp
