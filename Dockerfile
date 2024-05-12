@@ -17,7 +17,7 @@ COPY . .
 FROM base AS release
 RUN adduser bun bun
 COPY --from=install /temp/prod/node_modules node_modules
-COPY --chown=bun:bun --from=prerelease /temp/prod/. .
+COPY --chown=bun:bun --from=prerelease /usr/src/app/. .
 RUN mkdir /usr/src/app/.nuxt \
     && chown -R bun:bun /usr/src/app/.nuxt
 
